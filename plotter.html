@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/config1.css">
+        <link rel="stylesheet" href="css/plotter.css">
+    </head>
+    <body>
+        <nav class="topbar">
+            <a class="topbar-brand" href="#">Cryptid Task Force</a>
+            <div class="topbar-right">
+                <div class="topbar-links">
+                    <a class="topbar-item" href="about.html">About</a>
+                    <a class="topbar-item" href="GOboard.html">GOboard</a>
+                </div>
+                <div class="topbar-menu">
+                    <img class="menu" src="images/menu.svg">
+                    <div class="topbar-pane">
+                        <a class="topbar-item" href="about.html">About</a>
+                        <a class="topbar-item" href="GOboard.html">GOboard</a>
+                        <a class="topbar-pane-links" href="index.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="topbar-holder"></div>
+        <div></div>
+        <div class="panel">
+            <div id="plotPanel">
+
+            </div>
+            <div id="plotControls">
+                <button onclick="plotData()" id="plotButton">Plot!</button>
+                <div id="axisChooser">
+                    <button name="X" onclick="setAxis(this)" class="axisButton">X</button>
+                    <button name="Y" onclick="setAxis(this)" class="axisButton">Y</button>
+                    <button name="Z" onclick="setAxis(this)" class="axisButton">Z</button>
+                </div>
+                <div id="colorChooser">
+                    <label for="startColor">Start Color:</label>
+                    <input type="text" id="startColor" name="startColor">
+                    <label for="endColor">End Color:</label>
+                    <input type="text" id="endColor" name="endColor">
+                </div>
+                <div id="fileChooser">
+
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+        <script src="js/plotter.js"></script>
+    </body>
+</html>

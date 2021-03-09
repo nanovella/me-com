@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-cl-1);
+    color: var(--theme-text-cl-1);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainbut {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+a.drop-button{
+    color: var(--theme-cl-2);
+    font-size: 20px;
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+a.mod-button {
+    color: var(--theme-cl-1);
+    background-color: transparent;
+    font-size: 18px;
+    flex: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f1f1f1;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: var(--theme-cl-1);
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    background-color: var(--theme-cl-3);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color:var(--theme-cl-1);
+    color: var(--theme-cl-3);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.panel
+{
+  display:flex;
+  flex-direction: row;
+  height: 93vh;
+  width: 100vw;
+  margin:0;
+  padding:3vh;
+  background-image: linear-gradient(90deg, #ffb170, #ff76d5);
+  font-family: Helvetica;
+}
+
+#plotPanel {
+    width: 75vw;
+    height: 100%;
+    background-color: bisque;
+}
+
+#plotControls {
+    height: 100%;
+    background-color: cadetblue;
+    width: 19vw;
+}
+
+#plotButton {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 6vh;
+}
+
+#axisChooser {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+#colorChooser {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+#fileChooser {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+}
+
+.axisButton {
+    height: 4vh;
+    width: 5vw;
+    background-color: chartreuse;
+    color: black;
+}
+
+.axisButtonActive {
+    background-color: crimson;
+}
