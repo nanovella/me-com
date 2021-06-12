@@ -88,6 +88,17 @@ a.mod-button {
 .infoPanel {
     width: 25vw;
     height: 93vh;
+    padding: 5vh;
+    background-color: var(--light-goldenrod-yellow);
+}
+
+.contentPanel {
+  height: 93vh;
+  width: 75vw;
+  background-color: var(--gunmetal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fill-purple
@@ -117,16 +128,16 @@ a.mod-button {
   align-items:center;
   justify-content:center;
   position: relative;
-  height:47.875rem;
+  height:56.875rem;
   width:75vw;
 }
 
 .card
 {
   display:flex;
-  width:49.8125rem;
-  height:43.25rem;
-  border-radius:0.5rem;
+  width:69.8125rem;
+  height:55.25rem;
+  border-radius:0.25rem;
   transform-origin:center center;
   transform:scale(1) translate(0px,0px) perspective( 750px ) rotateY(0deg);
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);

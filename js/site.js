@@ -1,26 +1,34 @@
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li')
-    console.log(navLinks)
+// const navSlide = () => {
+//     const burger = document.querySelector('.burger');
+//     const nav = document.querySelector('.nav-links');
+//     const navLinks = document.querySelectorAll('.nav-links li')
+//     console.log(navLinks)
 
-    burger.addEventListener("click", () => {
-        nav.classList.toggle('nav-active');
+//     burger.addEventListener("click", () => {
+//         nav.classList.toggle('nav-active');
         
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ''
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease fowards ${index / 7 + 1}s`;
-            }
-        });
+//         navLinks.forEach((link, index) => {
+//             if (link.style.animation) {
+//                 link.style.animation = ''
+//             } else {
+//                 link.style.animation = `navLinkFade 0.5s ease fowards ${index / 7 + 1}s`;
+//             }
+//         });
 
-        burger.classList.toggle('toggle');
-    });
-}
+//         burger.classList.toggle('toggle');
+//     });
+// }
 
-navSlide();
+// navSlide();
 
+document.getElementsByClassName("topbar-menu")[0].addEventListener("click", () => {
+    if(document.getElementsByClassName("topbar-pane-show")[0] != undefined) {
+        document.getElementsByClassName("topbar-pane-show")[0].className = "topbar-pane";
+    }
+    else if(document.getElementsByClassName("topbar-pane")[0] != undefined) {
+        document.getElementsByClassName("topbar-pane")[0].className = "topbar-pane topbar-pane-show";
+    }
+});
 // function _class(name){
 //     return document.getElementsByClassName(name);
 // }

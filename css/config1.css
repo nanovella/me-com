@@ -15,7 +15,12 @@
   --flame: #EE5622;
   --gainsboro: #E0E0E2;
   --hookers-green: #4e796c;
-  
+  /* SCSS RGB */
+  --gunmetal: #122c34ff;
+  --indigo-dye: #224870ff;
+  --light-goldenrod-yellow: #f3f9d2ff;
+  --carolina-blue: #4ea5d9ff;
+  --persian-plum: #6f1d1bff;
 }
 
 * {
@@ -29,7 +34,7 @@
   top: 0;
   height: 7vh;
   width: 100%;
-  background-color: var(--theme-cl-7);
+  background-color: var(--indigo-dye);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 4;
   display: flex;
@@ -80,13 +85,24 @@
   position: absolute;
   right: -13vw;
   top: 7vh;
-  background-color:  rgba(37, 39, 49, 0.96);
+  background-color:  rgba(37, 39, 49, 0.97);
   padding: 2.5vh 0.9vw;
   transition: 0.7s ease-in-out all;
   display: flex;
   flex-direction: column;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
   box-shadow: 3px 0px 3px rgba(90, 90, 90, 0.3) inset;
+  justify-content: space-around;
+}
+
+.topbar-pane-item {
+  text-decoration: none;
+  color: white;
+  font-size: 14pt;
+  border-bottom: thin solid rgba(0, 0, 0, 0.5);
+  border-top: thin solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 
 .topbar-pane-show {
@@ -118,6 +134,7 @@
   height: 100%;
   color: white;
   position: relative;
+  text-decoration: none;
 }
 
 .topbar-item:hover {
