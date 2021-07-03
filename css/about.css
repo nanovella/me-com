@@ -92,6 +92,14 @@ a.mod-button {
     background-color: var(--light-goldenrod-yellow);
 }
 
+.dexterpanel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contentPanel {
   height: 93vh;
   width: 75vw;
@@ -242,4 +250,25 @@ a.mod-button {
   {
     transform:scale(0.75);
   }
+}
+
+
+
+.title {
+  padding: 2vh;
+  width: 60vw;
+  text-align: center;
+}
+
+.slides {
+  text-align: center;
+  width: 45vw;
+  padding: 3vh;
+  height: 50vh;
+}
+
+.footer {
+  text-align: center;
+  padding: 2vh;
+  width: 60vw;
 }
