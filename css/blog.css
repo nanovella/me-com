@@ -1,7 +1,8 @@
 .blog-box {
-    background-color:var(--yellow-orange);
-    border: thin solid rgba(0, 0, 0, 0.5);
-    box-shadow: 3px 5px 0px 0px rgba(0, 0, 0, 0.5);
+    background-color:var(--light-steel-blue);
+    border: thin solid rgba(60, 60, 60, 0.5);
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 3px rgba(25, 25, 25, 0.5);
     width: 100%;
     padding: 1.5vw;
     display: flex;
@@ -11,7 +12,7 @@
 }
 
 .blog-img {
-    height: 36vh;
+    height: 38vh;
 }
 
 .blog-slide-img {
@@ -27,5 +28,6 @@
 
 .carousel {
     border: thin solid rgba(0, 0, 0, 0.5);
-    background-color: var(--indigo-dye);
+    background-color: var(--yellow-orange);
 }
+

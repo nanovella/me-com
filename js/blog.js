@@ -26,12 +26,13 @@ class blog {
         } 
         d.innerHTML = this.text;
     }
-
+    
     makeCarosuel() {
         let slides = document.createElement("div");
         slides.id = "slides";
         slides.className = "carousel carousel-dark slide";
         slides.setAttribute("data-bs-ride", "carousel");
+        slides.setAttribute("data-bs-interval", "false");
         let indList1 = document.createElement("ol");
         indList1.className = "carousel-indicators";
         slides.appendChild(indList1);
@@ -51,6 +52,7 @@ class blog {
             indList1.appendChild(indListItem);
             let slide = document.createElement("div");
             slide.className = "carousel-item";
+            
             if(slideNum == 0) {
                 slide.className += " active";
                 indListItem.className += " active";

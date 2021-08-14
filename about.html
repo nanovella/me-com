@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="css/config1.css">
         <link rel="stylesheet" href="css/about.css">
     </head>
@@ -12,7 +16,7 @@
             <div class="topbar-right">
                 <div class="topbar-links">
                     <a class="topbar-item" href="about.html">About</a>
-                    <a class="topbar-item" href="GOboard.html">GOboard</a>
+                    <a class="topbar-item" href="">Projects >> </a>
                 </div>
                 <div class="topbar-menu">
                     <img class="menu" src="images/menu.svg">
@@ -29,30 +33,48 @@
         <div></div>
         <div class="panel">
             <div class="infoPanel">
-                <h3>Contact:</h3>
-                <img>978-204-1601</img>
-                <p>I am me.</p>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="ryan-begin-9139a713a" data-version="v1">
+                    <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/ryan-begin-9139a713a?trk=profile-badge">Ryan Begin</a>
+                </div>
+              
             </div>
             <div class="contentPanel">
-                <div class="cards">
-                    <div class="card fill-orange" data-card="0">
-                        <div class="card__icon" data-icon="1"></div>
-                        <div class="card__detail">Cryptid Task Force</div>
+                <div id="slides" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="slides" data-bs-slide-to="0" class="active active"></li>
+                        <li data-bs-target="slides" data-bs-slide-to="1" class="active"></li>
+                        <li data-bs-target="slides" data-bs-slide-to="2" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="about-box">
+                                <img src="images/IMG_2547.JPEG" class="blog-slide-img">
+                                <div class="blog-story">This is one of the peices I worked on at Dexter Russel.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="about-box">
+                                <img src="images/wheels_test_e.png" class="blog-slide-img">
+                                <div class="blog-story">This is my personal project. I am building a work bence/cart for my room.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="about-box">
+                                <img src="images/cryptidTF.png" class="blog-slide-img">
+                                <div class="blog-story">This is my personal project. I am building a website to host my friends TTRPG that he is developing. I am also assiting with beta testing an development.</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card fill-blue" data-card="1">
-                        <div class="card__icon" data-icon="2"></div>
-                        <div class="card__detail">Soil Moisture Sensors</div>
-                    </div>
-                    <div class="card fill-green" data-card="2">
-                        <div class="card__icon" data-icon="3"></div>
-                        <div class="card__detail">Dexter Russel</div>
-                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#slides" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a>
+                    <a class="carousel-control-next" data-bs-target="#slides" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a>
                 </div>
             </div>
             
         </div>
 
         <!-- <script src="js/site.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
         <script src="js/about.js"></script>
         <script src="js/site.js"></script>
     </body>
