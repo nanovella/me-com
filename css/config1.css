@@ -21,6 +21,10 @@
   --light-goldenrod-yellow: #f3f9d2ff;
   --carolina-blue: #4ea5d9ff;
   --persian-plum: #6f1d1bff;
+  --pale-cerulean: hsla(202, 46%, 72%, 1);
+  --rose-bonbon: hsla(331, 80%, 61%, 1);
+  --hunter-green: hsla(118, 15%, 34%, 1);
+  --yellow-orange: hsla(33, 91%, 66%, 1);
 }
 
 * {
@@ -154,3 +158,4 @@
   height: 0.5vh;
   background-color: var(--selective-yellow);
 }
+

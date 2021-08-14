@@ -6,6 +6,11 @@
     --theme-cl-4: #354B66;
     --theme-cl-5: #9BA2AB;
     --theme-cl-6: #757980;
+    --indigo-dye: hsla(209, 86%, 25%, 1);
+    --pale-cerulean: hsla(202, 46%, 72%, 1);
+    --rose-bonbon: hsla(331, 80%, 61%, 1);
+    --hunter-green: hsla(118, 15%, 34%, 1);
+    --yellow-orange: hsla(33, 91%, 66%, 1);
 }
 
 
