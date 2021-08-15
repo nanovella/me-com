@@ -1,6 +1,7 @@
 function loadBlogs() {
-    let e1 = new blog("images/wheels_test_e.png", "Some Text");
-    e1.makeBlog();
-    let e2 = new blog(["images/wheels_test_e.png", "images/drawer_w_slides.png", "images/wheels_test_e.png"], "These renders display the first version with a two way drawer design. The drawer rails don't quite line up yet.");
+    let e2 = new blog(
+        ["images/IMG_2408.jpeg", "images/drawer_w_slides.png", "images/wheels_test_e.png"], 
+        "These images show the orignial radios I set up for testing communication underground."
+    );
     e2.makeBlog();
 }

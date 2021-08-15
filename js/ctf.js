@@ -1,6 +1,8 @@
 function loadBlogs() {
-    let e1 = new blog("images/wheels_test_e.png", "Some Text");
-    e1.makeBlog();
-    let e2 = new blog(["images/wheels_test_e.png", "images/drawer_w_slides.png", "images/wheels_test_e.png"], "These renders display the first version with a two way drawer design. The drawer rails don't quite line up yet.");
+    let e2 = new blog(
+        ["images/cryptidTF.png", "images/cryptidLoadout.png", "images/wheels_test_e.png"], 
+        "These are some screenshots of this website I am working on building. It will be the host for my friend Nathan Bargman's TTRPG (Table Top Role Playing Game) called Cryptid Task Force." 
+        + "It is a game about protecting the world after the appearance of hundreds of monster around the world all coming from local myth and legend."
+    );
     e2.makeBlog();
 }

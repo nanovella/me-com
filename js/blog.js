@@ -13,6 +13,7 @@ class blog {
         let b = document.createElement("div");
         let d = document.createElement("div");
         b.appendChild(d);
+        d.className = "blog-text"
         b.className = "blog-box";
         document.getElementById("blogBox").appendChild(b);
         
@@ -58,8 +59,15 @@ class blog {
                 indListItem.className += " active";
             }
             let slideImg = document.createElement("img");
-            slideImg.src = image;
-            slideImg.className = "blog-slide-img";
+            if(image[0] == "$") {
+                slideImg.className = "blog-slide-img vertical";
+                slideImg.src = image.substring(1);
+            }
+            else {
+                slideImg.src = image;
+                slideImg.className = "blog-slide-img";
+            }
+            
             slide.appendChild(slideImg);
             slideBox.appendChild(slide);
             slideNum++;
