@@ -2,10 +2,12 @@ class blog {
     text;
     img;
     date;
+    id;
 
-    constructor(img, text, date) {
+    constructor(img, text, id, date) {
         this.text = text;
         this.img = img;
+        this.id = id;
         this.date = date;
     }
 
@@ -30,7 +32,7 @@ class blog {
     
     makeCarosuel() {
         let slides = document.createElement("div");
-        slides.id = "slides";
+        slides.id = this.id;
         slides.className = "carousel carousel-dark slide";
         slides.setAttribute("data-bs-ride", "carousel");
         slides.setAttribute("data-bs-interval", "false");
@@ -39,10 +41,10 @@ class blog {
         slides.appendChild(indList1);
         let slideBox = document.createElement("div"); slides.appendChild(slideBox); slideBox.className = "carousel-inner";
         let button1 = document.createElement("a"); slides.appendChild(button1); button1.className = "carousel-control-prev"; 
-        button1.setAttribute("data-bs-target", "#slides"); button1.setAttribute("data-bs-slide", "prev"); button1.role = "button";
+        button1.setAttribute("data-bs-target", "#" + this.id); button1.setAttribute("data-bs-slide", "prev"); button1.role = "button";
         button1.innerHTML = '<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>'
         let button2 = document.createElement("a"); slides.appendChild(button2); button2.className = "carousel-control-next"; 
-        button2.setAttribute("data-bs-target", "#slides"); button2.setAttribute("data-bs-slide", "next"); button2.role = "button";
+        button2.setAttribute("data-bs-target", "#" + this.id); button2.setAttribute("data-bs-slide", "next"); button2.role = "button";
         button2.innerHTML = '<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>'
         let slideNum = 0;
         this.img.forEach(image => {
