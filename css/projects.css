@@ -20,12 +20,12 @@ html, body {
   display:flex;
   flex-direction: row;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-end;
   height: 93vh;
   width: 100vw;
   margin:0;
   padding:0;
-  background-color: var(--hunter-green);
+  background-color: var(--light-steel-blue);
   font-family: Helvetica;
   position: relative;
 }
@@ -39,13 +39,13 @@ html, body {
 }
 
 .side-panel {
-    width: 15%;
+    width: 30%;
     height: 30%;
-    font-size: 1vh;
+    font-size: 1.3vh;
     position: absolute;
     left: 2%;
     top: 3%;
-    background-color: var(--light-steel-blue);
+    background-color: var(--hunter-green);
     padding: 1vh;
 }
 
