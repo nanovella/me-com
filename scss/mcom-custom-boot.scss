@@ -1,14 +1,16 @@
 // Variable overrides first
-$primary: orange;
-$secondary: #e71fd7;
+$primary: #F6AE2D;
+$secondary: #334E58;
 
-$light: rgb(255, 210, 125);
-$dark: rebeccapurple;
-$danger: #be4fff;
-$success: orange;
-$info: aqua;
+$light: #BA1200;
+$dark: #400707;
+$danger: #400707;
+$success: #BA1200;
+$info: aqua; 
 
-$body-bg: #f5f5f5;
+$body-bg: #22333B;
+$body-color: aliceblue;
+$border-color: $primary;
 
 
 $enable-shadows: true;
@@ -16,3 +18,4 @@ $prefix: "mcom-";
 
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
