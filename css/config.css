@@ -27,3 +27,14 @@
     height: 90vh;
     min-height: 600px;
   }
+
+  .carousel-caption {
+    background-color: var(--mcom-dark);
+    opacity: 0.85;
+    padding-top: 5px;
+    border-radius: var(--mcom-border-radius);
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.3rem;
+  }
