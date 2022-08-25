@@ -29,8 +29,8 @@
   }
 
   .carousel-caption {
-    background-color: var(--mcom-dark);
-    opacity: 0.85;
+    /* background-color: var(--mcom-dark); */
+    /* opacity: 0.85; */
     padding-top: 5px;
     border-radius: var(--mcom-border-radius);
   }
