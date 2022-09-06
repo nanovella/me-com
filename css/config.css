@@ -21,6 +21,7 @@
   
   .carousel-item {
     height: 60vh;
+    background-color: var(--mcom-light);
   }
   
   .resume-block {
@@ -29,12 +30,17 @@
   }
 
   .carousel-caption {
-    /* background-color: var(--mcom-dark); */
-    /* opacity: 0.85; */
-    padding-top: 5px;
+    background-color: var(--mcom-body-bg);
+    opacity: 0.85;
+    padding: 5px;
     border-radius: var(--mcom-border-radius);
+    bottom: 5%;
   }
 
   .carousel-caption h1 {
     font-size: 1.3rem;
+  }
+
+  img {
+    width: 30vw;
   }
