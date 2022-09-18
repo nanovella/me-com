@@ -16,9 +16,7 @@
   }
 
   .center-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
   }
 
   .carousel {
@@ -55,4 +53,25 @@
   img {
     width: 100%;
     height: 100%;
+  }
+
+  .vid-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .slide-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .vid-background {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
