@@ -82,3 +82,9 @@
     padding-left: 25%;
     padding-right: 25%;
   }
+
+  .index-box {
+    font-size: 8vh;
+    display: flex;
+    justify-content: center;
+  }
