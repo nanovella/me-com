@@ -75,3 +75,10 @@
     justify-content: center;
     width: 100%;
   }
+
+  .pic-box {
+    display: flex;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
